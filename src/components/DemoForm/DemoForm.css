@@ -1,3 +1,49 @@
-.demo-form{
+.demo-form {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 1rem;
+}
 
+
+.demo-form .form .form-row {
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.demo-form .form-control {
+    margin: 0 15px 0 0;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    border: 1px solid lightgrey;
+    width: 100%;
+}
+
+.demo-form .form-control:focus {
+    outline: 2px auto lightblue;
+}
+
+.demo-form .form-control:last-child {
+    margin: 0;
+}
+
+.demo-form .form-control.form-select {
+    background: white;
+}
+
+@media (max-width: 1200px) {
+    .demo-form .form .form-row {
+        margin: 15px 0 0 0;
+        display: grid;
+        justify-content: normal;
+    }
+
+    .demo-form .form-control {
+        margin: 15px 0 0 0;
+        width: auto;
+    }
+
+    .demo-form .form-control:last-child {
+        margin: 15px 0 0 0;
+    }
 }
