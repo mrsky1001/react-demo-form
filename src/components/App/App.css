@@ -2,3 +2,9 @@
     padding: 20% 25% 0 25%;
     color: #3e3e3e;
 }
+
+@media (max-width: 1200px) {
+    .app {
+        padding: 5% 5% 0 5%;
+    }
+}

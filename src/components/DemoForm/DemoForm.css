@@ -31,8 +31,28 @@
     background: white;
 }
 
+.demo-form .form .form-actions-row {
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.demo-form .form-control.form-button {
+    background: cornflowerblue;
+    color: white;
+}
+
+.demo-form .form-control.empty-control {
+    border: 0;
+}
+
+.demo-form .form-success-message{
+    background: lightgreen;
+}
+
 @media (max-width: 1200px) {
-    .demo-form .form .form-row {
+    .demo-form .form .form-row,
+    .demo-form .form .form-actions-row {
         margin: 15px 0 0 0;
         display: grid;
         justify-content: normal;
@@ -46,4 +66,9 @@
     .demo-form .form-control:last-child {
         margin: 15px 0 0 0;
     }
+
+    .demo-form .form-control.empty-control {
+        display: none;
+    }
+
 }
