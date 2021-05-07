@@ -21,7 +21,8 @@ const DemoForm = () => {
     const [resMessage, setResMessage] = useState(messageTemplates.FORM_SENT)
 
     const submitForm = (e) => {
-        fetch('http://0.0.0.0:80/post', {
+        setLoading(true)
+        fetch('https://httpbin.org/delay/3', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
@@ -38,7 +39,7 @@ const DemoForm = () => {
         }).catch((res) => {
             setResMessage(messageTemplates.FORM_NOT_SENT)
         }).finally(() => {
-            setLoading(true)
+            setLoading(false)
             setIsSentForm(true)
         })
 

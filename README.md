@@ -6,7 +6,5 @@
 Для тестирования отправки запросов использовался httpbin.
 
 ```
-docker run -p 80:80 kennethreitz/httpbin
-
 npm run dev
 ```
