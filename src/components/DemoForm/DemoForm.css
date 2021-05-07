@@ -50,6 +50,11 @@
     background: lightgreen;
 }
 
+.demo-form .form-error-message{
+    background: lightcoral;
+}
+
+
 @media (max-width: 1200px) {
     .demo-form .form .form-row,
     .demo-form .form .form-actions-row {
